@@ -1,2 +1,2 @@
 ### Heather Kambarami Personal Website ###
-#### testing ####
+#### Hello my name is Heather Kambarami. I am an aspiring Software Engineer from Zimbabwe. ####
