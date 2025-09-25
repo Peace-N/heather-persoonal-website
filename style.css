@@ -6,6 +6,9 @@
 
 navbar {
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link {
@@ -18,7 +21,7 @@ navbar {
 
 .nav-link:hover {
     color: white;
-    background-color: black;
+    background-color: grey;
 }
 
 .navbar-brand {
@@ -26,4 +29,22 @@ navbar {
     font-weight: 800;
     color: black;
     cursor: pointer;
+}
+
+.navbarNavAltMarkup {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar-nav ml auto {
+    margin-left: auto;
+}
+
+.navbar-nav ml auto a {
+    margin-right: 20px
+}
+
+.navbarNavAltMarkup {
+    margin-left: auto;
 }
