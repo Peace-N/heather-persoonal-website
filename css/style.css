@@ -1,0 +1,88 @@
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #d9dae2 !important;
+}
+
+/*
+main section */
+.main {
+    /* background-image: url(hk2.jpg); */
+    background-color: white important;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main h3 {
+    font-size: 4.4 rem;
+    font-weight: 700;
+}
+
+.main h6 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid rgb(red, green, blue);
+    width: 40%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-image: ('images/hk2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f2f4f7;
+}
+
+.hero img {
+    max-width: 1000%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.hero-image-col {
+    min-height: 400px;
+    height: 60vh;
+    background-image: url('images/hk2.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
