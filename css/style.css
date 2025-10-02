@@ -86,3 +86,13 @@ body {
     background-repeat: no-repeat;
     border-radius: 20px;
 }
+
+.about {
+    background-color: grey !important;
+
+    /* For debugging */
+}
+
+body {
+    background-color: grey !important;
+}
