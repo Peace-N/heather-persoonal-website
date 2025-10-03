@@ -3,6 +3,18 @@
     background-color: #d9dae2 !important;
 }
 
+.heather-bg-red {
+    background-color: #d3150b !important;
+}
+
+.heather-bg-blue {
+    background-color: #007bff !important;
+}
+
+.heather-bg-red-blue {
+    background: linear-gradient(90deg, rgba(211, 21, 11, 1) 50%, rgba(0, 123, 255, 1) 100%);
+}
+
 /*
 main section */
 .main {
