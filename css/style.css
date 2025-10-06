@@ -11,13 +11,17 @@
     background-color: #007bff !important;
 }
 
+.heather-bg-white {
+    background-color: white !important;
+}
+
 .heather-bg-red-blue {
     background: radial-gradient(circle, rgba(211, 21, 11, 1) 17%, rgba(0, 123, 255, 1) 100%);
 }
 
 .carousel-inner img {
     width: 1740px;
-    height: 400px;
+    height: 550px;
     object-fit: cover;
     /* Ensures the image covers the area without distortion */
     margin: 0 auto;
@@ -25,6 +29,10 @@
 }
 
 .sr-only {
+    color: rgb(51, 169, 199) !important;
+}
+
+.carousel-caption {
     color: red !important;
 }
 
