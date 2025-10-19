@@ -33,7 +33,7 @@
 }
 
 .carousel-caption {
-    color: red !important;
+    color: rgb(158, 36, 36) !important;
 }
 
 /*
@@ -128,4 +128,9 @@ body {
 
 body {
     background-color: grey !important;
+}
+
+/* services section */
+.service .card-body i {
+    font-size: 50px;
 }
