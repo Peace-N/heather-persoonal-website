@@ -130,7 +130,19 @@ body {
     background-color: grey !important;
 }
 
-/* services section */
+/* services section start */
 .service .card-body i {
     font-size: 50px;
 }
+
+/* ...existing code... */
+.card {
+    height: 100%;
+}
+
+.col-d-flex {
+    display: flex;
+    align-items: stretch;
+}
+
+/* services section end */
