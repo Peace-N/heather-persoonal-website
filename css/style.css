@@ -8,7 +8,7 @@
 }
 
 .heather-bg-blue {
-    background-color: #007bff !important;
+    background-color: rgb(69, 99, 197) !important;
 }
 
 .heather-bg-white {
@@ -25,6 +25,10 @@
 
 .heather-bg-grey-red {
     background-color: rgb(160, 119, 128) !important;
+}
+
+.heather-bg-black {
+    background-color: black !important;
 }
 
 .heather-bg- .carousel-inner img {
@@ -154,3 +158,7 @@ body {
 }
 
 /* services section end */
+
+.form-control-lg {
+    width: 100%;
+}
