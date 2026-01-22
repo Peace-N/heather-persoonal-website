@@ -45,7 +45,7 @@
 <!-- Navbar end  -->
 
  <!-- services section start-->
- <section id="services section-padding" class="heather-bg-white">
+ <section id="services" class="heather-bg-white">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -64,7 +64,10 @@
             <i class="bi bi-bookmark-check-fill"></i>
             <h3 class="card-title">Web Development</h3>
             <p class="leead">The goal is to craft seamless web experiences for our customers so that they have a great customer experience.</p>
-            <button class="btn-warning text-dark mt-auto">Read More</button>
+            <div class="more-content" style="display: none;">
+              <p>I specialize in creating responsive websites using HTML, CSS, JavaScript, and frameworks like Bootstrap and React. From concept to deployment, I ensure your website is fast, secure, and user-friendly.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div> 
       </div>
@@ -74,7 +77,10 @@
             <i class="bi bi-phone"></i>
             <h3 class="card-title">Mobile Application Development</h3>
             <p class="leead">Bringing your ideas to life with innovative and user-centric mobile app solutions.</p>
-            <button class="btn-warning text-dark mt-auto">Read More</button>
+            <div class="more-content" style="display: none;">
+              <p>Developing native and cross-platform mobile apps for iOS and Android using technologies like Flutter and React Native. I focus on intuitive design and optimal performance.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div>
         
@@ -85,7 +91,10 @@
             <i class="bi bi-asterisk"></i>
             <h3 class="card-title">Requirements Engineering</h3>
             <p class="leead">Transforming your ideas into clear, actionable requirements for successful project outcomes.</p>
-            <button class="btn-warning text-dark mt-auto">Read More</button>
+            <div class="more-content" style="display: none;">
+              <p>Expert in gathering, analyzing, and documenting software requirements. I use techniques like interviews, workshops, and prototyping to ensure all stakeholders' needs are met.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div>
         
@@ -96,7 +105,10 @@
             <i class="bi bi-check"></i>
             <h3 class="card-title">Data Communications and Networking</h3>
             <p class="leead">Connecting systems seamlessly for reliable and efficient data communication.</p>
-            <button class="btn-warning text-dark mt-auto">Read More</button>
+            <div class="more-content" style="display: none;">
+              <p>Designing and implementing network architectures, ensuring secure data transmission, and optimizing connectivity for applications and services.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div>
        </div>
@@ -107,7 +119,7 @@
 
  </section>
 
- <section id="services section-padding" class="heather-bg-white">
+ <section id="services-2" class="heather-bg-white">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -124,7 +136,10 @@
             <i class="bi bi-fullscreen"></i>
             <h3 class="card-title">Full Stack Development</h3>
             <p class="leead">Building end-to-end solutions tailored to bring your ideas to life.</p>
-            <button class="btn-warning text-dark mt-auto">Read More</button>
+            <div class="more-content" style="display: none;">
+              <p>Full-stack development covering both front-end and back-end technologies. I create scalable applications using modern stacks like MERN or MEAN.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div> 
       </div>
@@ -134,7 +149,10 @@
             <i class="bi bi-brilliance"></i>
             <h3 class="card-title">Graphics Design</h3>
             <p class="leead">Creating visual stories that captivate and inspire.</p>
-            <button class="btn-warning text-dark mt-auto">Read More</button>
+            <div class="more-content" style="display: none;">
+              <p>Designing logos, branding materials, UI/UX interfaces, and marketing graphics using tools like Adobe Creative Suite and Figma.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div>
         
@@ -145,7 +163,10 @@
             <i class="bi bi-database-fill"></i>
             <h3 class="card-title">Database Design</h3>
             <p class="leead">Designing efficient and scalable databases to power your applications.</p>
-            <button class="btn-warning text-dark mt-auto">Read More</button>
+            <div class="more-content" style="display: none;">
+              <p>Expert in relational and NoSQL databases like MySQL, PostgreSQL, and MongoDB. I focus on data modeling, optimization, and security.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div>
         
@@ -155,8 +176,11 @@
           <div class="card-body d-flex flex-column">
             <i class="bi bi-braces"></i>
             <h3 class="card-title">Software Testing</h3>
-            <p class="leead">The goal is to craft seamless web experiences for our customers so that they have a great customer experience.</p>
-             <button class="btn-warning text-dark mt-auto">Read More</button>
+            <p class="leead">Ensuring software quality through comprehensive testing strategies.</p>
+            <div class="more-content" style="display: none;">
+              <p>Performing unit testing, integration testing, and user acceptance testing using tools like JUnit, Selenium, and Postman to deliver bug-free software.</p>
+            </div>
+            <button class="btn-warning text-dark mt-auto read-more-btn">Read More</button>
           </div>
         </div>
        </div>
@@ -210,5 +234,22 @@
 <!-- footer end -->
   <!-- Bootstrap JS Bundle (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const readMoreButtons = document.querySelectorAll('.read-more-btn');
+      readMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const moreContent = this.previousElementSibling;
+          if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            this.textContent = 'Read Less';
+          } else {
+            moreContent.style.display = 'none';
+            this.textContent = 'Read More';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
